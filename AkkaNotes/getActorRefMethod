@@ -1,0 +1,4 @@
+1. 通過ActorSystem的actorOf方法，不過這種方式是通過創建Actor，然後返回其ActorRef
+2. 通過context.actorOf方法，這種方式也是通過創建Actor ,然後返回其ActorRef
+3. 通過context.parent、context.self、context.children方法獲取當前Actor的父Actor、當前Actor及子Actor的ActorRef，這種方式是獲取已經創建好的Actor的ActorRef
+4. 通過val myActor1=system.actorSelection(myActorPath)方法來獲取ActorRef，這種方式也是獲取已經創建好的Actor的ActorRef
